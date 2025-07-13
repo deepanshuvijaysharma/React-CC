@@ -4,19 +4,24 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  let [counter, useCounter] = useState(15);
+  let [counter, setCounter] = useState(15);
   // let counter = 15;
 
   const addValue = () => {
-    counter = counter + 1;
-    console.log("Adding value", counter);
-    useCounter(counter);
+    // counter = counter + 1;
+    // console.log("Adding value", counter);
+    // useCounter(counter);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
   };
 
   const remValue = () => {
-    counter = counter - 1;
-    console.log("Removing value", counter);
-    useCounter(counter);
+    // counter = counter - 1;
+    // console.log("Removing value", counter);
+    // useCounter(counter);
+    setCounter(counter - 1);
   };
   return (
     <>
